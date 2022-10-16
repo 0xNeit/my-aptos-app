@@ -4,12 +4,8 @@ import { load, save } from 'redux-localstorage-simple'
 import { isTestEnv } from 'utils/env'
 
 import application from './application/reducer'
-import burn from './burn/reducer'
 import connection from './connection/reducer'
 import { updateVersion } from './global/actions'
-import lists from './lists/reducer'
-import mint from './mint/reducer'
-import swap from './swap/reducer'
 import transactions from './transactions/reducer'
 import user from './user/reducer'
 import wallets from './wallets/reducer'
@@ -24,10 +20,6 @@ const store = configureStore({
     connection,
     transactions,
     wallets,
-    swap,
-    mint,
-    burn,
-    lists,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ thunk: true }).concat(
