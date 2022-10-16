@@ -103,22 +103,22 @@ export default function App() {
   }, [pathname])
 
   return (
-    <>
+    <AppBody>
       <DarkModeQueryParamReader />
       <AppWrapper>
         <HeaderWrapper>
           <Header />
         </HeaderWrapper>
-        <BodyWrapper>
+        {/* <BodyWrapper>
           <TopLevelModals />
           <Marginer />
-        </BodyWrapper>
+</BodyWrapper> */}
         <FooterWrapper>
           <Footer />
         </FooterWrapper>
         <BottomRightLogo />
         <BottomLeftLogo />
       </AppWrapper>
-    </>
+    </AppBody>
   )
 }
